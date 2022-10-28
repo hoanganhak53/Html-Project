@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     box-sizing: border-box;
+    color: #f7fafc;
 }
 body{
-    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmhhJTIwdHJhbmclMjBiZWFjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center center;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-image: url('https://static.vecteezy.com/system/resources/previews/004/548/332/original/glossy-happy-birthday-balloons-background-illustration-free-vector.jpg');
+    background-size: cover;
+    background-position: center center;
+
 }
 
 h1{
     font-weight: normal;
-    font-size: 4rem;
-    margin-top: 5rem;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .countdown-container{
@@ -27,7 +31,7 @@ h1{
 
 .big-text{
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 1;
     margin:5px 25px;
 }
@@ -37,5 +41,76 @@ h1{
 }
 .countdown-el span{
     margin-left: 0rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+
+img {
+  z-index: -100;
+  vertical-align: middle;
+  max-width: 683px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.slideshow-container {
+  margin-top: 20px;
+  max-width: 683px;
+  margin: auto;
+  position: absolute;
+  z-index: -100;
+}
+
+.mySlides {display: none;}
+
+.cmsn {
+  display: none;
+  text-algin: center;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-algin: center;
+}
+a {
+  color: #b95b96;
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+  slideshow-container {
+    width: 100vh;
+    height: 100vh;
+  }
+  h1{
+    font-size: 2.2rem
+  }
+  .big-text{
+    font-size: 2.4rem
+  }
+  .countdown-el span{
+    font-size: 1.2rem
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
 }
